@@ -17,3 +17,10 @@ const Counter = () => {
 };
 
 export default Counter;
+
+
+// state - count: 0
+// action - increment, decrement, reset
+// reducers - increment -> count => count + 1
+//          - increment -> count => count - 1
+//          - reset -> count => 0
