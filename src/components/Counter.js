@@ -25,3 +25,5 @@ export default Counter;
 //             - increment -> count => count - 1
 //             - reset -> count => 0
 // 4. store
+// 5. providing store in react
+// 4. use store
