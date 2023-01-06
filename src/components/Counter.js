@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { incrementCounter } from '../services/actions/counterAction';
 
 const Counter = () => {
-
     const count = useSelector(state => state.count);
+    const dispatch = useDispatch();
     console.log(count);
-    const handleIncrement = () => {
 
+    const handleIncrement = () => {
+        dispatch(incrementCounter());
     };
 
     return (
         <div>
             <h2>Counter App</h2>
 
-            <h3>Count: 0</h3>
+            <h3>Count: {count}</h3>
             <button onClick={handleIncrement}>Increment</button>
         </div>
     );
