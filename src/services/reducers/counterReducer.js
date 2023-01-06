@@ -4,7 +4,7 @@
 
 import { INCREMENT, DECREMENT, RESET } from "../constants/counterConstants";
 
-const initialCounter = { count: 0 }
+const initialCounter = { count: 0 };
 const counterReducer = (state = initialCounter, action) => {
     switch (action.type) {
         case INCREMENT:
