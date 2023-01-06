@@ -19,8 +19,9 @@ const Counter = () => {
 export default Counter;
 
 
-// state - count: 0
-// action - increment, decrement, reset
-// reducers - increment -> count => count + 1
-//          - increment -> count => count - 1
-//          - reset -> count => 0
+// 1. state - count: 0
+// 2. action - increment, decrement, reset
+// 3. reducers - increment -> count => count + 1
+//             - increment -> count => count - 1
+//             - reset -> count => 0
+// 4. store
